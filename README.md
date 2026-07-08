@@ -3,6 +3,8 @@
 
 A simple web-based Library Management System built with Python and Flask. It helps manage library users, books, and borrowing/returning transactions in a structured way.
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 ## Features
 - User registration and login
 - Add, update, and delete books
