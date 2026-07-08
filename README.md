@@ -108,3 +108,18 @@ python -m unittest discover -s tests
 - If the app uses SQLite instead of MySQL, check the database environment variables.
 - If you get a MySQL connection error, check your MySQL username, password, host, and database name.
 ```
+## output:
+<img width="470" height="172" alt="image" src="https://github.com/user-attachments/assets/8c49847e-f263-485b-b103-bbebe7785b73" />
+<img width="464" height="181" alt="image" src="https://github.com/user-attachments/assets/97fa9afe-b676-4797-8b12-a37aa7365251" />
+<img width="460" height="201" alt="image" src="https://github.com/user-attachments/assets/befe1cd0-203d-4a88-8b27-687ec09bb634" />
+<img width="468" height="217" alt="image" src="https://github.com/user-attachments/assets/68444f82-e23c-4f92-920a-2cdecbe02177" />
+<img width="466" height="217" alt="image" src="https://github.com/user-attachments/assets/ad617a88-ea61-4bdf-9206-facfb535c6c4" />
+<img width="469" height="155" alt="image" src="https://github.com/user-attachments/assets/e2bf752b-fc2f-42d3-85b3-98e8c85d2dc0" />
+<img width="467" height="332" alt="image" src="https://github.com/user-attachments/assets/c31805b3-ab52-4e8e-9292-d29c4d077bb3" />
+
+
+
+
+
+
+
