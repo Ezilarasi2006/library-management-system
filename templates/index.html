@@ -1,0 +1,32 @@
+{% extends 'layout.html' %}
+{% block content %}
+<h2>Dashboard</h2>
+<div class="stats-grid">
+    <div class="card stat-card">
+        <h3>Total Books</h3>
+        <p>{{ total_books }}</p>
+    </div>
+    <div class="card stat-card">
+        <h3>Total Users</h3>
+        <p>{{ total_users }}</p>
+    </div>
+</div>
+<div class="card">
+    <h3>Books</h3>
+    <table>
+        <tr><th>Title</th><th>Author</th><th>Available</th></tr>
+        {% for book in books %}
+        <tr><td>{{ book.title }}</td><td>{{ book.author }}</td><td>{{ book.available_quantity }}</td></tr>
+        {% endfor %}
+    </table>
+</div>
+<div class="card">
+    <h3>Recent Transactions</h3>
+    <table>
+        <tr><th>User</th><th>Book</th><th>Type</th><th>Status</th></tr>
+        {% for t in transactions %}
+        <tr><td>{{ t.username }}</td><td>{{ t.title }}</td><td>{{ t.transaction_type }}</td><td>{{ t.status }}</td></tr>
+        {% endfor %}
+    </table>
+</div>
+{% endblock %}

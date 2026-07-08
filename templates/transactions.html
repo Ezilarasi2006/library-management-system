@@ -1,0 +1,29 @@
+{% extends 'layout.html' %}
+{% block content %}
+<div class="card">
+    <h2>Transactions</h2>
+    <form method="post">
+        <label>Book</label>
+        <select name="book_id" required>
+            {% for book in books %}
+            <option value="{{ book.id }}">{{ book.title }} (Available: {{ book.available_quantity }})</option>
+            {% endfor %}
+        </select>
+        <label>Action</label>
+        <select name="transaction_type" required>
+            <option value="borrow">Borrow</option>
+            <option value="return">Return</option>
+        </select>
+        <button type="submit">Save Transaction</button>
+    </form>
+</div>
+<div class="card">
+    <h3>Transaction History</h3>
+    <table>
+        <tr><th>User</th><th>Book</th><th>Type</th><th>Status</th><th>Date</th></tr>
+        {% for t in transactions %}
+        <tr><td>{{ t.username }}</td><td>{{ t.title }}</td><td>{{ t.transaction_type }}</td><td>{{ t.status }}</td><td>{{ t.transaction_date }}</td></tr>
+        {% endfor %}
+    </table>
+</div>
+{% endblock %}
